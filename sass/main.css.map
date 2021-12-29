@@ -2,7 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "Layout/_pagecontainer.scss"
     ],
     "names": [],
     "file": "main.css"
