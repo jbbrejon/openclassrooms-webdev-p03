@@ -3,9 +3,7 @@
     background-color: #eaeaea;
     height: 64px;
     &__city {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display-row;
         width: 164px;
         font-weight: 500;  
         i {
