@@ -1,9 +1,11 @@
 #location {
     @include display-row;
+    justify-content: center;
     background-color: #eaeaea;
     height: 64px;
     &__city {
-        @include display-row;
+        display: flex;
+        align-items: center;
         width: 164px;
         font-weight: 500;  
         i {
@@ -12,3 +14,29 @@
     }
 }
      
+.cta {
+   @include display-column;
+    background-color: #f6f6f6;
+    padding: 0px 20px 0px 40px;
+    height: 288px; 
+    &__title {
+        padding: 15px 20px 0 20px;
+        font-size: 26px;
+        text-align: center;
+    }
+    &__text {
+        margin-top: 0;
+        font-size: 18px;
+        font-weight:300;
+    }
+    &__button{
+        width: 220px;
+        height: 51px;
+        background: linear-gradient(0.5turn, $color-secondary,$color-primary);
+        border-radius: 25px;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}

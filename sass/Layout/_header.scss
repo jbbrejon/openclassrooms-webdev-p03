@@ -1,5 +1,6 @@
 header{
-    @include display-row;
+    @include display-row ;
+    justify-content: center;
     height: 64px;
     h1{
         font-family: $font-primary;
