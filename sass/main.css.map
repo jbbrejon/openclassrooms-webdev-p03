@@ -3,7 +3,8 @@
     "mappings": "ACAA,AAAA,cAAc,CAAC;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CACzB",
     "sources": [
         "main.scss",
-        "Layout/_pagecontainer.scss"
+        "Layout/_pagecontainer.scss",
+        "Abstracts/_variables.scss"
     ],
     "names": [],
     "file": "main.css"
