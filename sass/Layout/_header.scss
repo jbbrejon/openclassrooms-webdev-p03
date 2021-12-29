@@ -1,7 +1,5 @@
 header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-row;
     height: 64px;
     h1{
         font-family: $font-primary;

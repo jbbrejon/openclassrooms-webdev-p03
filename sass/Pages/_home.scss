@@ -1,7 +1,5 @@
 #location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-row;
     background-color: #eaeaea;
     height: 64px;
     &__city {
