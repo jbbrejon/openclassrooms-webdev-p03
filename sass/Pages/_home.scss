@@ -82,3 +82,86 @@
         font-size: 18px;
     }   
 }
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f6f6f6;
+    padding: 40px 20px 40px 20px;
+    &__cards{
+        display: flex;
+        flex-direction: column;   
+    }      
+}
+.card-restaurant {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 10px 0 10px 0;
+    background-color: white;
+    height: 252px;
+    &__img{
+        display: flex;
+        flex-direction: column;
+        img{
+            display: flex;
+            height: 175px;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }  
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 78px;
+        padding: 10px;  
+    }
+}
+    
+.restaurant-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__title{
+        display: flex;
+        margin: 0;
+    }
+    &__place{
+        display: flex;
+        margin: 0;
+        padding-top: 5px;
+    }    
+}
+
+.restaurant-like {
+    display: flex;
+    padding-right: 10px;
+    &__heart {
+        &--full {
+            fill: url(#gradient-vertical) ;
+            position: absolute;
+            opacity: 0;
+            transition: 0.5s;
+           }   
+    }
+    #gradient-vertical {
+        --color-stop-1: #9356DC;
+        --color-stop-2: #FF79DA  ;
+      } 
+    .restaurant-like__heart--full:hover{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
