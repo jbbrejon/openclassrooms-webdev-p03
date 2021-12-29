@@ -1,0 +1,1 @@
+2021-12-29 JBB | sass_directories.sh : create sass folders and main.scss file (7-1 architecture)
