@@ -6,7 +6,8 @@
         "Layout/_pagecontainer.scss",
         "Abstracts/_variables.scss",
         "Layout/_header.scss",
-        "Layout/_body.scss"
+        "Layout/_body.scss",
+        "Pages/_home.scss"
     ],
     "names": [],
     "file": "main.css"
