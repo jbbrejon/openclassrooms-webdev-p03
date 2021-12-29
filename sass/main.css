@@ -29,4 +29,36 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+
+#location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eaeaea;
+  height: 64px;
+}
+
+#location__city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 164px;
+  font-weight: 500;
+}
+
+#location__city i {
+  margin-right: 15px;
+}
 /*# sourceMappingURL=main.css.map */
