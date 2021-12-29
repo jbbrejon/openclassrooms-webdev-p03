@@ -4,7 +4,8 @@
     "sources": [
         "main.scss",
         "Layout/_pagecontainer.scss",
-        "Abstracts/_variables.scss"
+        "Abstracts/_variables.scss",
+        "Layout/_header.scss"
     ],
     "names": [],
     "file": "main.css"
