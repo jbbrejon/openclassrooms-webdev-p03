@@ -441,21 +441,17 @@ header a {
           flex-direction: row;
   background-color: white;
   margin-top: 15px;
-  padding: 10px;
   border-radius: 15px;
+  height: 69px;
 }
 
-.menu-item {
+.menu-card:hover .menu-item__check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
 }
 
-.menu-item__text {
+.menu-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,9 +459,13 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 10px 0px 10px 20px;
 }
 
-.menu-item__text-title {
+.menu-item__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,16 +473,25 @@ header a {
   font-weight: 500;
 }
 
-.menu-item__text-desc {
+.menu-item__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 10px;
+}
+
+.menu-item__info-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 15px;
   font-weight: lighter;
-  margin-top: 5px;
 }
 
-.menu-item__price {
+.menu-item__info-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,6 +500,25 @@ header a {
           align-items: flex-end;
   margin-right: 15px;
   font-weight: bold;
+}
+
+.menu-item__check {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 25px;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 80px;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #cta-order {

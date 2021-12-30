@@ -69,38 +69,71 @@ header a{
 .menu-card{
     display: flex;
     flex-direction: row;
+    
     background-color: white;
     margin-top: 15px;
-    padding: 10px;
-    border-radius: 15px;  
+    
+    border-radius: 15px;
+    height: 69px;
+
+    &:hover .menu-item__check{
+        display: flex; 
+    }
+    
+   
 }
 
 .menu-item{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     width: 100%;
-    &__text{
+    padding: 10px 0px 10px 20px;
+
+
+    &__title{
         display: flex;
-        flex-direction: column;
-        &-title{
-            display: flex;
-            font-size: 16px;
-            font-weight: 500;
-        }
-        &-desc{
-            display: flex;
-            font-size: 15px;
-            font-weight: lighter;
-            margin-top: 5px;
-        }   
+        font-size: 16px;
+        font-weight: 500;
+        
     }
-    &__price{
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+    &__info-desc{
+        display: flex;
+        font-size: 15px;
+        font-weight: lighter;
+        
+    }   
+
+    &__info-price{
         display: flex;
         align-items: flex-end;
         margin-right: 15px;
         font-weight: bold;
-    }   
+    }
+
+    &__check{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 25px;
+        background-color: $color-tertiary;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 80px;
+        height: 100%;
+        transition: 1s;   
+    }
+       
 }
+
+
 
 #cta-order{
     display: flex;
