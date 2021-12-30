@@ -493,6 +493,28 @@ header a {
   font-weight: bold;
 }
 
+#cta-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+
+#cta-order button {
+  width: 185px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(0.5turn, #FF79DA, #9356DC);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
