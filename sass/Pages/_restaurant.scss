@@ -12,3 +12,30 @@ header a{
         width: 100%;
     }
 }
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: -35px;
+    padding: 10px 20px 0 20px;
+    background-color: #f6f6f6;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px; 
+}
+
+
+.restaurant-page__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-name{
+        display: flex;
+        font-family: $font-primary;
+    }
+    &-like{
+        display: flex;
+        margin-right: 20px;
+    
+    }
+}
