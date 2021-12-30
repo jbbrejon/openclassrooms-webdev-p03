@@ -333,4 +333,10 @@ footer {
   font-size: 12px;
   margin-right: 10px;
 }
+
+header a {
+  position: absolute;
+  left: 35px;
+  font-size: 20px;
+}
 /*# sourceMappingURL=main.css.map */
