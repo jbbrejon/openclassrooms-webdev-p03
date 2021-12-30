@@ -39,3 +39,77 @@ header a{
     
     }
 }
+
+
+#restaurant-allcat{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-cat{
+    display: flex;
+    flex-direction: column;
+
+    &__name{
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    &__line{
+        display: flex;
+        margin-top: 5px;
+        height: 3px;
+        width: 40px;
+        background-color: $color-tertiary;
+    }
+}
+
+.menu-card{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 15px;  
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        &-title{
+            display: flex;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &-desc{
+            display: flex;
+            font-size: 15px;
+            font-weight: lighter;
+            margin-top: 5px;
+        }   
+    }
+    &__price{
+        display: flex;
+        align-items: flex-end;
+        margin-right: 15px;
+        font-weight: bold;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
