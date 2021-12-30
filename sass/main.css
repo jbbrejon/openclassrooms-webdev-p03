@@ -339,4 +339,17 @@ header a {
   left: 35px;
   font-size: 20px;
 }
+
+.restaurant-page__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 260px;
+}
+
+.restaurant-page__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

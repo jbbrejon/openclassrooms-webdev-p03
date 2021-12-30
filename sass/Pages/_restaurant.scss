@@ -3,3 +3,12 @@ header a{
     left: 35px;
     font-size: 20px;
 }
+
+.restaurant-page__img {
+    display: flex;
+    height: 260px ;
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
