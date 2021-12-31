@@ -460,6 +460,51 @@ header a {
           animation: checkbox-rotate 0.4s ease-in;
 }
 
+#starter-1 {
+  -webkit-animation: card-display 0.5s ease;
+          animation: card-display 0.5s ease;
+}
+
+#starter-2 {
+  -webkit-animation: card-display 1s ease;
+          animation: card-display 1s ease;
+}
+
+#starter-3 {
+  -webkit-animation: card-display 1.5s ease;
+          animation: card-display 1.5s ease;
+}
+
+#maincourse-1 {
+  -webkit-animation: card-display 2s ease;
+          animation: card-display 2s ease;
+}
+
+#maincourse-2 {
+  -webkit-animation: card-display 2.5s ease;
+          animation: card-display 2.5s ease;
+}
+
+#maincourse-3 {
+  -webkit-animation: card-display 3s ease;
+          animation: card-display 3s ease;
+}
+
+#dessert-1 {
+  -webkit-animation: card-display 3.5s ease;
+          animation: card-display 3.5s ease;
+}
+
+#dessert-2 {
+  -webkit-animation: card-display 4s ease;
+          animation: card-display 4s ease;
+}
+
+#dessert-3 {
+  -webkit-animation: card-display 4.5s ease;
+          animation: card-display 4.5s ease;
+}
+
 .menu-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,6 +648,24 @@ main {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes card-display {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes card-display {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */

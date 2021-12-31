@@ -73,12 +73,11 @@ header a{
 .menu-card{
     display: flex;
     flex-direction: row;
-    
     background-color: white;
     margin-top: 15px;
-    
     border-radius: 15px;
     height: 69px;
+    
 
     &:hover .menu-item__check{
         display: flex;
@@ -89,9 +88,37 @@ header a{
     &:hover .menu-item__check i{
         
         animation: checkbox-rotate 0.4s ease-in; 
-    }
-    
+    }   
    
+}
+
+#starter-1{
+    animation: card-display 0.5s ease;
+}
+#starter-2{
+    animation: card-display 1s ease;
+}
+#starter-3{
+    animation: card-display 1.5s ease;
+}
+#maincourse-1{
+    animation: card-display 2s ease;
+}
+#maincourse-2{
+    animation: card-display 2.5s ease;
+}
+#maincourse-3{
+    animation: card-display 3s ease;
+}
+
+#dessert-1{
+    animation: card-display 3.5s ease;
+}
+#dessert-2{
+    animation: card-display 4s ease;
+}
+#dessert-3{
+    animation: card-display 4.5s ease;
 }
 
 .menu-item{
