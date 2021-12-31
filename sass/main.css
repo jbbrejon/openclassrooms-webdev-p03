@@ -460,47 +460,17 @@ header a {
           animation: checkbox-rotate 0.4s ease-in;
 }
 
-#starter-1 {
+.card-1 {
   -webkit-animation: card-display 0.5s ease-in-out;
           animation: card-display 0.5s ease-in-out;
 }
 
-#starter-2 {
+.card-2 {
   -webkit-animation: card-display 1s ease-in-out;
           animation: card-display 1s ease-in-out;
 }
 
-#starter-3 {
-  -webkit-animation: card-display 1.5s ease-in-out;
-          animation: card-display 1.5s ease-in-out;
-}
-
-#maincourse-1 {
-  -webkit-animation: card-display 0.5s ease-in-out;
-          animation: card-display 0.5s ease-in-out;
-}
-
-#maincourse-2 {
-  -webkit-animation: card-display 1s ease-in-out;
-          animation: card-display 1s ease-in-out;
-}
-
-#maincourse-3 {
-  -webkit-animation: card-display 1.5s ease-in-out;
-          animation: card-display 1.5s ease-in-out;
-}
-
-#dessert-1 {
-  -webkit-animation: card-display 0.5s ease-in-out;
-          animation: card-display 0.5s ease-in-out;
-}
-
-#dessert-2 {
-  -webkit-animation: card-display 1s ease-in-out;
-          animation: card-display 1s ease-in-out;
-}
-
-#dessert-3 {
+.card-3 {
   -webkit-animation: card-display 1.5s ease-in-out;
           animation: card-display 1.5s ease-in-out;
 }

@@ -93,34 +93,16 @@ header a{
    
 }
 
-#starter-1{
+.card-1{
     animation: card-display 0.5s ease-in-out;
 }
-#starter-2{
+.card-2{
     animation: card-display 1s ease-in-out;
 }
-#starter-3{
-    animation: card-display 1.5s ease-in-out;
-}
-#maincourse-1{
-    animation: card-display 0.5s ease-in-out;
-}
-#maincourse-2{
-    animation: card-display 1s ease-in-out;
-}
-#maincourse-3{
+.card-3{
     animation: card-display 1.5s ease-in-out;
 }
 
-#dessert-1{
-    animation: card-display 0.5s ease-in-out;
-}
-#dessert-2{
-    animation: card-display 1s ease-in-out;
-}
-#dessert-3{
-    animation: card-display 1.5s ease-in-out;
-}
 
 .menu-item{
     display: flex;
