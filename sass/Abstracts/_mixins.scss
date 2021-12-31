@@ -5,6 +5,17 @@
 
 @mixin display-column {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
+}
+
+@mixin tablet-display {
+    @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop-display {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }  
 }

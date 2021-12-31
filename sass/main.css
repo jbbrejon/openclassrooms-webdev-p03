@@ -8,6 +8,20 @@
           flex-direction: column;
 }
 
+@media only screen and (min-width: 768px) {
+  #pagecontainer {
+    max-width: 768px;
+    margin: auto;
+    width: 98%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #pagecontainer {
+    max-width: 1340px;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +63,13 @@ body a {
   height: 64px;
 }
 
+@media only screen and (min-width: 768px) {
+  #location {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+}
+
 #location__city {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,6 +99,12 @@ body a {
   background-color: #f6f6f6;
   padding: 0px 20px 0px 40px;
   height: 288px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cta {
+    height: 200px;
+  }
 }
 
 .cta__title {
@@ -116,11 +143,29 @@ body a {
   height: 439px;
 }
 
+@media only screen and (min-width: 992px) {
+  .operation {
+    height: 150px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
 .operation__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
+}
+
+@media only screen and (min-width: 992px) {
+  .operation__title {
+    margin-right: 40px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
 }
 
 .operation__list-ul {
@@ -132,6 +177,22 @@ body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+  .operation__list-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 73px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .operation__list-li {
@@ -146,6 +207,12 @@ body a {
   height: 73px;
   border-radius: 25px;
   font-size: 16px;
+}
+
+@media only screen and (min-width: 992px) {
+  .operation__list-li {
+    padding-right: 20px;
+  }
 }
 
 .operation__list-number {
@@ -187,6 +254,15 @@ body a {
   padding: 40px 20px 40px 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .restaurants {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+  }
+}
+
 .restaurants__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,6 +271,20 @@ body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .restaurants__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .card-restaurant {
@@ -209,6 +299,18 @@ body a {
   margin: 10px 0 10px 0;
   background-color: white;
   height: 252px;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-restaurant {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card-restaurant {
+    width: 24%;
+  }
 }
 
 .card-restaurant__img {
@@ -304,6 +406,12 @@ footer {
   padding: 20px;
 }
 
+@media only screen and (min-width: 992px) {
+  footer {
+    padding: 10px;
+  }
+}
+
 .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,9 +422,38 @@ footer {
           flex-direction: column;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+    margin: auto;
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .footer-container {
+    max-width: 1340px;
+    margin: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer-container__title {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer-container__title {
+    margin-right: 50px;
+    margin-left: 20px;
+  }
 }
 
 .footer-container__ul {
@@ -327,6 +464,13 @@ footer {
   font-size: 16px;
   margin-bottom: 10px;
   list-style: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer-container__ul-li {
+    display: inline;
+    padding-right: 20px;
+  }
 }
 
 .footer-container i {
@@ -368,6 +512,13 @@ header a {
   border-top-right-radius: 40px;
 }
 
+@media only screen and (min-width: 992px) {
+  .menu {
+    margin-bottom: 20px;
+    border-radius: 40px;
+  }
+}
+
 .restaurant-page__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,6 +529,13 @@ header a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .restaurant-page__info {
+    width: 30%;
+    margin: auto;
+  }
 }
 
 .restaurant-page__info-name {
@@ -404,6 +562,18 @@ header a {
           flex-direction: column;
 }
 
+@media only screen and (min-width: 992px) {
+  #restaurant-allcat {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .menu-cat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,6 +582,12 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+  .menu-cat {
+    width: 32.9%;
+  }
 }
 
 .menu-cat__name {
@@ -508,9 +684,7 @@ header a {
 }
 
 .menu-item__info-desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 15px;
   font-weight: lighter;
 }

@@ -21,7 +21,11 @@ header a{
     padding: 10px 20px 0 20px;
     background-color: #f6f6f6;
     border-top-left-radius: 40px;
-    border-top-right-radius: 40px; 
+    border-top-right-radius: 40px;
+    @include desktop-display{
+        margin-bottom: 20px;
+        border-radius: 40px; 
+    } 
 }
 
 
@@ -29,6 +33,10 @@ header a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include desktop-display {
+        width: 30%;
+        margin: auto;
+    }
     &-name{
         display: flex;
         font-family: $font-primary;
@@ -44,11 +52,18 @@ header a{
 #restaurant-allcat{
     display: flex;
     flex-direction: column;
+    @include desktop-display{
+        flex-direction: row;
+        justify-content: space-between; 
+    }
 }
 
 .menu-cat{
     display: flex;
     flex-direction: column;
+    @include desktop-display{
+        width: 32.9%; 
+    }
 
     &__name{
         text-transform: uppercase;
@@ -89,7 +104,9 @@ header a{
     &:hover .menu-item__check i{
         
         animation: checkbox-rotate 0.4s ease-in; 
-    }   
+    }
+    
+    
    
 }
 
@@ -123,12 +140,14 @@ header a{
         display: flex;
         justify-content: space-between;
         padding-right: 10px;
+
     }
     &__info-desc{
-        display: flex;
+        display: inline-block;
         font-size: 15px;
         font-weight: lighter;
-        
+
+         
     }   
 
     &__info-price{

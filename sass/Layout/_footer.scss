@@ -1,15 +1,33 @@
 footer{
     background-color: #353535;
     color: white;
-    padding: 20px;   
+    padding: 20px;
+    @include desktop-display{
+        padding: 10px;
+    }   
 }
 
 .footer-container{
     display: flex;
     flex-direction: column;
+    @include tablet-display{
+        max-width: 768px;
+            margin: auto;
+            width: 95%;     
+      }
+    @include desktop-display{
+        max-width: 1340px;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+    }
     &__title{
         font-family: $font-primary;
         font-size: 18px;
+        @include desktop-display{
+            margin-right: 50px;
+            margin-left: 20px;
+        }
     }
     &__ul{
         padding-left: 0;
@@ -17,6 +35,10 @@ footer{
             font-size: 16px;
             margin-bottom: 10px;
             list-style: none;
+            @include desktop-display{
+                display: inline;
+                padding-right: 20px;
+            }
         }
     }
     i{

@@ -3,6 +3,10 @@
     justify-content: center;
     background-color: #eaeaea;
     height: 64px;
+    @include tablet-display{
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
     &__city {
         display: flex;
         align-items: center;
@@ -20,6 +24,9 @@
     background-color: #f6f6f6;
     padding: 0px 20px 0px 40px;
     height: 288px; 
+    @include tablet-display {
+        height: 200px;
+      }
     &__title {
         padding: 15px 20px 0 20px;
         font-size: 26px;
@@ -45,16 +52,31 @@
 .operation{
     @include display-column;
     padding-left: 20px;
-    height: 439px; 
+    height: 439px;
+    @include desktop-display{
+        height: 150px;
+        align-items: center;
+        margin-bottom: 20px;
+    } 
     &__title{
         display: flex;
-        margin-top: 50px;    
+        margin-top: 50px;
+        @include desktop-display{
+            margin-right: 40px;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }    
     }
     &__list-ul{
         padding-left: 0px;
-        
         display: flex;
         flex-direction: column;
+        @include desktop-display{
+            display: flex;
+            flex-direction: row;
+            height:73px;
+            justify-content: space-evenly;
+        }
     }
     &__list-li{
         display: flex;
@@ -63,7 +85,10 @@
         background-color: #f6f6f6;
         height:73px;
         border-radius: 25px;
-        font-size: 16px;    
+        font-size: 16px;
+        @include desktop-display{
+            padding-right: 20px;
+        }    
     }
     &__list-number{
         display: flex;
@@ -89,9 +114,24 @@
     justify-content: center;
     background-color: #f6f6f6;
     padding: 40px 20px 40px 20px;
+    @include tablet-display {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-bottom: 20px;
+        padding-top : 15px;   
+      }
+
+
+
     &__cards{
         display: flex;
-        flex-direction: column;   
+        flex-direction: column;
+        @include tablet-display {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+                
+          }   
     }      
 }
 .card-restaurant {
@@ -101,6 +141,12 @@
     margin: 10px 0 10px 0;
     background-color: white;
     height: 252px;
+    @include tablet-display {
+        width: 48%;   
+      }
+    @include desktop-display {
+        width: 24%;
+    }
     &__img{
         display: flex;
         flex-direction: column;

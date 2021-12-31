@@ -1,4 +1,12 @@
 #pagecontainer {
     display: flex;
     flex-direction: column;
+    @include tablet-display{
+        max-width: 768px;
+        margin: auto;
+        width: 98%;
+    }
+    @include desktop-display{
+        max-width: 1340px;
+    }
 }
