@@ -449,6 +449,10 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation: checkbox-slide 0.5s ease;
+          animation: checkbox-slide 0.5s ease;
 }
 
 .menu-item {
@@ -551,5 +555,27 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@-webkit-keyframes checkbox-slide {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(-50px);
+            transform: scaleX(-50px);
+  }
+}
+
+@keyframes checkbox-slide {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(-50px);
+            transform: scaleX(-50px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
