@@ -461,48 +461,48 @@ header a {
 }
 
 #starter-1 {
-  -webkit-animation: card-display 0.5s ease;
-          animation: card-display 0.5s ease;
+  -webkit-animation: card-display 0.5s ease-in-out;
+          animation: card-display 0.5s ease-in-out;
 }
 
 #starter-2 {
-  -webkit-animation: card-display 1s ease;
-          animation: card-display 1s ease;
+  -webkit-animation: card-display 1s ease-in-out;
+          animation: card-display 1s ease-in-out;
 }
 
 #starter-3 {
-  -webkit-animation: card-display 1.5s ease;
-          animation: card-display 1.5s ease;
+  -webkit-animation: card-display 1.5s ease-in-out;
+          animation: card-display 1.5s ease-in-out;
 }
 
 #maincourse-1 {
-  -webkit-animation: card-display 2s ease;
-          animation: card-display 2s ease;
+  -webkit-animation: card-display 0.5s ease-in-out;
+          animation: card-display 0.5s ease-in-out;
 }
 
 #maincourse-2 {
-  -webkit-animation: card-display 2.5s ease;
-          animation: card-display 2.5s ease;
+  -webkit-animation: card-display 1s ease-in-out;
+          animation: card-display 1s ease-in-out;
 }
 
 #maincourse-3 {
-  -webkit-animation: card-display 3s ease;
-          animation: card-display 3s ease;
+  -webkit-animation: card-display 1.5s ease-in-out;
+          animation: card-display 1.5s ease-in-out;
 }
 
 #dessert-1 {
-  -webkit-animation: card-display 3.5s ease;
-          animation: card-display 3.5s ease;
+  -webkit-animation: card-display 0.5s ease-in-out;
+          animation: card-display 0.5s ease-in-out;
 }
 
 #dessert-2 {
-  -webkit-animation: card-display 4s ease;
-          animation: card-display 4s ease;
+  -webkit-animation: card-display 1s ease-in-out;
+          animation: card-display 1s ease-in-out;
 }
 
 #dessert-3 {
-  -webkit-animation: card-display 4.5s ease;
-          animation: card-display 4.5s ease;
+  -webkit-animation: card-display 1.5s ease-in-out;
+          animation: card-display 1.5s ease-in-out;
 }
 
 .menu-item {
@@ -654,18 +654,22 @@ main {
 @-webkit-keyframes card-display {
   0% {
     opacity: 0;
+    margin-top: 25px;
   }
   100% {
     opacity: 1;
+    margin-top: 15px;
   }
 }
 
 @keyframes card-display {
   0% {
     opacity: 0;
+    margin-top: 25px;
   }
   100% {
     opacity: 1;
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -78,6 +78,7 @@ header a{
     border-radius: 15px;
     height: 69px;
     
+    
 
     &:hover .menu-item__check{
         display: flex;
@@ -93,32 +94,32 @@ header a{
 }
 
 #starter-1{
-    animation: card-display 0.5s ease;
+    animation: card-display 0.5s ease-in-out;
 }
 #starter-2{
-    animation: card-display 1s ease;
+    animation: card-display 1s ease-in-out;
 }
 #starter-3{
-    animation: card-display 1.5s ease;
+    animation: card-display 1.5s ease-in-out;
 }
 #maincourse-1{
-    animation: card-display 2s ease;
+    animation: card-display 0.5s ease-in-out;
 }
 #maincourse-2{
-    animation: card-display 2.5s ease;
+    animation: card-display 1s ease-in-out;
 }
 #maincourse-3{
-    animation: card-display 3s ease;
+    animation: card-display 1.5s ease-in-out;
 }
 
 #dessert-1{
-    animation: card-display 3.5s ease;
+    animation: card-display 0.5s ease-in-out;
 }
 #dessert-2{
-    animation: card-display 4s ease;
+    animation: card-display 1s ease-in-out;
 }
 #dessert-3{
-    animation: card-display 4.5s ease;
+    animation: card-display 1.5s ease-in-out;
 }
 
 .menu-item{
