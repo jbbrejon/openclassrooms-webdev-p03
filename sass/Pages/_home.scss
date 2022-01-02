@@ -37,15 +37,12 @@
         font-size: 18px;
         font-weight:300;
     }
-    &__button{
+    &__btn{
         width: 220px;
         height: 51px;
-        background: linear-gradient(0.5turn, $color-secondary,$color-primary);
         border-radius: 25px;
-        border: 0px;
-        color: white;
         font-size: 15px;
-        font-weight: bold;
+        
     }
 }
 
