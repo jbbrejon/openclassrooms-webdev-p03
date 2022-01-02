@@ -473,6 +473,10 @@ footer {
   }
 }
 
+.footer-container a {
+  color: white;
+}
+
 .footer-container i {
   font-size: 12px;
   margin-right: 10px;
