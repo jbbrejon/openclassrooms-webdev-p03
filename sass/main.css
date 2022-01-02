@@ -15,6 +15,22 @@
           box-shadow: 0px 5px 10px #9f9f9f;
 }
 
+.loader {
+  border-left: 5px solid #9356DC;
+  border-right: 5px solid #FF79DA;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 0.8s ease-in-out;
+          animation: spin 0.8s ease-in-out;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+}
+
 #pagecontainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,6 +39,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: welcome 2.8s ease-in;
+          animation: welcome 2.8s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -418,6 +436,8 @@ footer {
   background-color: #353535;
   color: white;
   padding: 20px;
+  -webkit-animation: welcome 2.8s ease-in;
+          animation: welcome 2.8s ease-in;
 }
 
 @media only screen and (min-width: 992px) {
@@ -827,6 +847,62 @@ main {
   100% {
     opacity: 1;
     margin-top: 15px;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes welcome {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opcacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes welcome {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opcacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */

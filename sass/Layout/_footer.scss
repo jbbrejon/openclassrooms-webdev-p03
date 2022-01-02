@@ -2,6 +2,7 @@ footer{
     background-color: #353535;
     color: white;
     padding: 20px;
+    animation: welcome 2.8s ease-in;
     @include desktop-display{
         padding: 10px;
     }   
