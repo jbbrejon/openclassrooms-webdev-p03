@@ -19,3 +19,7 @@
         @content;
     }  
 }
+
+@mixin box-shadow {
+    box-shadow: 0px 5px 10px rgba(227, 227, 227, 1);
+}

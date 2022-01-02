@@ -141,6 +141,7 @@
     margin: 10px 0 10px 0;
     background-color: white;
     height: 252px;
+    @include box-shadow;
     @include tablet-display {
         width: 48%;   
       }

@@ -299,6 +299,8 @@ body a {
   margin: 10px 0 10px 0;
   background-color: white;
   height: 252px;
+  -webkit-box-shadow: 0px 5px 10px #e3e3e3;
+          box-shadow: 0px 5px 10px #e3e3e3;
 }
 
 @media only screen and (min-width: 768px) {
