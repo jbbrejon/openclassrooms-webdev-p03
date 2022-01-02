@@ -32,25 +32,36 @@
   @keyframes spin {
     0% {
       transform: rotate(0deg);
+      opacity: 0.1;
+    }
+    50% { 
       opacity: 1;
     }
     100% {
       transform: rotate(360deg);
-      opacity: 0.5;
+      opacity: 0.2;
     }
   }
+
+  @keyframes splash {
+    0% {
+      opacity: 0.1;
+    }
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+
 
   @keyframes welcome {
     0% {
       opacity: 0;
     }
-    
-    50%{
-      opacity: 0;
-    }
-
-    70%{
-      opcacity :0
+    80%{
+      opacity :0
     }
     100% {
       opacity: 1

@@ -1,7 +1,6 @@
 #pagecontainer {
     display: flex;
     flex-direction: column;
-    animation: welcome 2.8s ease-in;
 
     @include tablet-display{
         max-width: 768px;
