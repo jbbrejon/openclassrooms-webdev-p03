@@ -135,6 +135,7 @@
 .card-restaurant {
     display: flex;
     flex-direction: column;
+    position: relative;
     border-radius: 15px;
     margin: 10px 0 10px 0;
     background-color: white;
@@ -165,6 +166,36 @@
         height: 78px;
         padding: 10px;  
     }
+
+    &__new {
+        display: flex;
+        justify-content: center;
+        border-radius: 2px;
+        align-items: center;
+        position: absolute;
+        background: $color-tertiary;
+        top: 20px;
+        right: 20px;
+        
+        p {
+            color: #1b6150;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 5px 10px;
+            margin: 0;
+          }
+
+
+
+
+      }
+
+
+
+
+
+
+
 }
     
 .restaurant-info{

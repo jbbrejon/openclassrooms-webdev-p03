@@ -377,6 +377,7 @@ body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   border-radius: 15px;
   margin: 10px 0 10px 0;
   background-color: white;
@@ -431,6 +432,31 @@ body a {
           justify-content: space-between;
   height: 78px;
   padding: 10px;
+}
+
+.card-restaurant__new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background: #99E2D0;
+  top: 20px;
+  right: 20px;
+}
+
+.card-restaurant__new p {
+  color: #1b6150;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 10px;
+  margin: 0;
 }
 
 .restaurant-info {
