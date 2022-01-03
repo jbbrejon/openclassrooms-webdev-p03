@@ -55,6 +55,23 @@
   opacity: 0;
 }
 
+#gradient-vertical {
+  --color-stop-1: #9356DC;
+  --color-stop-2: #FF79DA  ;
+}
+
+.heart--full {
+  fill: url(#gradient-vertical);
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.heart--full:hover {
+  opacity: 1;
+}
+
 #index-container {
   -webkit-animation: welcome 2.8s ease-in-out;
           animation: welcome 2.8s ease-in-out;

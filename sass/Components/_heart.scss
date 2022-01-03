@@ -1,0 +1,13 @@
+#gradient-vertical {
+    --color-stop-1: #9356DC;
+    --color-stop-2: #FF79DA  ;
+  } 
+.heart--full {
+    fill: url(#gradient-vertical) ;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+   }  
+.heart--full:hover{
+    opacity: 1;
+}
