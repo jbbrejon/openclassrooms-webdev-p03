@@ -25,7 +25,8 @@ header a{
     border-top-right-radius: 40px;
     @include desktop-display{
         margin-bottom: 20px;
-        border-radius: 40px; 
+        border-radius: 40px;
+         
     } 
 }
 
@@ -55,7 +56,8 @@ header a{
     flex-direction: column;
     @include desktop-display{
         flex-direction: row;
-        justify-content: space-between; 
+        justify-content: space-between;
+        height: 300px; 
     }
 }
 
