@@ -1,7 +1,8 @@
 header a{
-    position: absolute;
-    left: 35px;
+   
     font-size: 20px;
+    position: absolute;
+    left: 15px;
 }
 
 .restaurant-page__img {
@@ -127,6 +128,7 @@ header a{
     justify-content: space-around;
     width: 100%;
     padding: 10px 0px 10px 20px;
+    box-shadow: 0px 5px 10px #f6f6f6;
 
 
     &__title{
@@ -146,6 +148,7 @@ header a{
         display: inline-block;
         font-size: 15px;
         font-weight: lighter;
+
 
          
     }   
