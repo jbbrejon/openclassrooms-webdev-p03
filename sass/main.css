@@ -264,6 +264,8 @@ body a {
   height: 73px;
   border-radius: 25px;
   font-size: 16px;
+  -webkit-box-shadow: 0px 5px 10px #e3e3e3;
+          box-shadow: 0px 5px 10px #e3e3e3;
 }
 
 @media only screen and (min-width: 992px) {
@@ -457,6 +459,11 @@ body a {
 
 .restaurant-like .restaurant-like__heart--full:hover {
   opacity: 1;
+}
+
+#index-container {
+  -webkit-animation: welcome 2.8s ease-in-out;
+          animation: welcome 2.8s ease-in-out;
 }
 
 footer {

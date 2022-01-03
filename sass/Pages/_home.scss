@@ -83,6 +83,7 @@
         height:73px;
         border-radius: 25px;
         font-size: 16px;
+        @include box-shadow;
         @include desktop-display{
             padding-right: 20px;
         }    
@@ -201,11 +202,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
+#index-container{
+    animation: welcome 2.8s ease-in-out;
+}
