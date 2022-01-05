@@ -621,7 +621,7 @@ header a {
   font-weight: 700;
 }
 
-.restaurant-info {
+.restaurant-information {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,7 +642,7 @@ header a {
   background-color: transparent;
 }
 
-.restaurant-info__title {
+.restaurant-information__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,7 +664,7 @@ header a {
   background-color: transparent;
 }
 
-.restaurant-info__place {
+.restaurant-information__place {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

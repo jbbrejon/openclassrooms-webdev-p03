@@ -177,7 +177,7 @@
       }
 }
     
-.restaurant-info{
+.restaurant-information{
     @include flexbox($flex-direction: column,$flex-justify: space-around);
     @include box-model($padding: 5px 0 20px 5px);
     &__title{
