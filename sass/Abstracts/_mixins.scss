@@ -23,3 +23,21 @@
 @mixin box-shadow {
     box-shadow: 0px 5px 10px rgba(227, 227, 227, 1);
 }
+
+
+@mixin flexbox($flex-direction: row, $flex-justify: normal, $flex-align: normal, $position: static) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $flex-justify;
+    align-items: $flex-align;
+    position : $position; 
+}
+
+@mixin box-model($margin: 0, $padding: 0, $width : auto, $height: auto, $background-color: transparent) {
+    margin: $margin;
+    padding: $padding;
+    width: $width;
+    height: $height;
+    background-color: $background-color;
+}
+

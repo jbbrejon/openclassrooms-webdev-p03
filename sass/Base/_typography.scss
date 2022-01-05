@@ -1,9 +1,11 @@
 body{
-    margin: 0;
     font-family: $font-secondary;
     a{
         text-decoration: none;
         color: black;
     }
 }
-
+h1{
+    font-family: $font-primary;
+    font-size: 2em;
+}

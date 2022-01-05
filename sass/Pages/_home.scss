@@ -1,73 +1,80 @@
+// Index container
+#index-container{
+    animation: welcome 2.8s ease-in-out;
+}
+
+// Section - Location
 #location {
-    @include display-row;
-    justify-content: center;
-    background-color: #eaeaea;
-    height: 64px;
+    @include flexbox($flex-justify: center);
+    @include box-model($height: 49px, $background-color: #eaeaea);
+    // Responsive
     @include tablet-display{
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
+    
     &__city {
-        display: flex;
-        align-items: center;
-        width: 164px;
+        @include flexbox($flex-align: center);
+        @include box-model($width: 164px);
         font-weight: 500;  
         i {
-            margin-right: 15px;
+            @include box-model($margin: 0 15px 0 0);
         }
-    }
-}
-     
-.cta {
-   @include display-column;
-   align-items: center;
-    background-color: #f6f6f6;
-    padding: 0px 20px 0px 40px;
-    height: 288px; 
-    @include tablet-display {
-        height: 200px;
-      }
-    &__title {
-        padding: 15px 20px 0 20px;
-        font-size: 26px;
-        text-align: center;
-    }
-    &__text {
-        margin-top: 0;
-        font-size: 18px;
-        font-weight:300;
-    }
-    &__btn{
-        width: 220px;
-        height: 51px;
-        border-radius: 25px;
-        font-size: 15px;
-        
-    }
+    } 
 }
 
+// Section - CTA
+.cta {
+    @include flexbox($flex-direction: column, $flex-align: center);
+    @include box-model($padding: 0px 20px 0px 40px, $height: 288px, $background-color: #f6f6f6);
+    // Responsive - Tablet & Desktop
+    @include tablet-display {
+        height: 200px;
+    }
+
+    &__title {
+        @include box-model($padding: 38px 20px 10px 20px);
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    &__text {
+        @include box-model ($margin: 0 0 35px 0);
+        font-size: 1.1em;
+        font-weight:300;
+    }
+    
+    &__btn{
+        @include box-model ($width: 220px, $height: 51px);
+        border-radius: 25px;
+        font-size: 15px;  
+    }  
+}
+
+//Section - Operation
 .operation{
-    @include display-column;
-    padding-left: 20px;
-    height: 439px;
+    @include flexbox ($flex-direction: column);
+    @include box-model ($padding : 0 0 0 20px, $height: 439px);
+    //Responsive - Desktop
     @include desktop-display{
         height: 150px;
         align-items: center;
         margin-bottom: 20px;
     } 
+
     &__title{
-        display: flex;
-        margin-top: 50px;
+        @include flexbox;
+        @include box-model ($margin : 50px 0 10px 0);
+        //Responsive - Desktop
         @include desktop-display{
-            margin-right: 40px;
-            margin-top: 15px;
-            margin-bottom: 0;
+            margin : 15px 40px 0 0
         }    
     }
+
     &__list-ul{
-        padding-left: 0px;
-        display: flex;
-        flex-direction: column;
+        @include flexbox ($flex-direction: column);
+        @include box-model;
+        // Responsive - Desktop
         @include desktop-display{
             display: flex;
             flex-direction: row;
@@ -75,43 +82,38 @@
             justify-content: space-evenly;
         }
     }
+
     &__list-li{
-        display: flex;
-        align-items: center; 
-        margin: 0 20px 20px 20px;  
-        background-color: #f6f6f6;
-        height:73px;
+        @include flexbox($flex-align: center);
+        @include box-model($margin: 0 20px 20px 20px,$background-color: #f6f6f6, $height: 73px);  
+        @include box-shadow;
         border-radius: 25px;
         font-size: 16px;
-        @include box-shadow;
+        // Responsive - Desktop
         @include desktop-display{
             padding-right: 20px;
         }    
     }
+    
     &__list-number{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -15px;
-        margin-right: 15px;
-        background-color: $color-primary;
+        @include flexbox($flex-justify: center, $flex-align: center);
+        @include box-model($margin: 0 15px 0 -15px, $width: 25px, $height: 25px, $background-color: $color-primary);
         border-radius: 50px;
-        width: 30px;
-        height: 30px;
         color: white;
+        font-size: 0.9em;
     }
+
     i{
-        margin-right: 15px;
-        font-size: 18px;
+        @include box-model($margin: 0 15px 0 0);
+        font-size: 1.1em;
     }   
 }
 
+// Section - Restaurants
 .restaurants{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #f6f6f6;
-    padding: 40px 20px 40px 20px;
+    @include flexbox($flex-direction: column,$flex-justify: center);
+    @include box-model ($padding: 40px 20px 40px 20px, $background-color: #f6f6f6);
+    // Responsive - Tablet & Desktop
     @include tablet-display {
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
@@ -119,103 +121,78 @@
         padding-top : 15px;   
       }
 
-
-
     &__cards{
-        display: flex;
-        flex-direction: column;
+        @include flexbox($flex-direction: column);
+        // Responsive - Tablet & Desktop  
         @include tablet-display {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
-                
+            justify-content: space-between;     
           }   
     }      
 }
+
 .card-restaurant {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border-radius: 15px;
-    margin: 10px 0 10px 0;
-    background-color: white;
-    height: 252px;
+    @include flexbox($flex-direction: column, $position: relative);
+    @include box-model ($margin: 10px 0 10px 0, $background-color: white, $height: 252px);
     @include box-shadow;
+    border-radius: 15px;
+    // Responsive - Tablet
     @include tablet-display {
         width: 48%;   
       }
+    // Responsive - Desktop
     @include desktop-display {
         width: 24%;
     }
+    
     &__img{
-        display: flex;
-        flex-direction: column;
+        @include flexbox($flex-direction: column);
         img{
-            display: flex;
-            height: 175px;
-            width: 100%;
+            @include flexbox;
+            @include box-model($height: 175px, $width: 100%);
             object-fit: cover;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
         }  
     }
+
     &__info{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 78px;
-        padding: 10px;  
+        @include flexbox ($flex-justify: space-between, $flex-align: center);
+        @include box-model ($height: 78px, $padding: 10px);  
     }
 
     &__new {
-        display: flex;
-        justify-content: center;
-        border-radius: 2px;
-        align-items: center;
-        position: absolute;
-        background: $color-tertiary;
+        @include flexbox ($flex-justify: center, $flex-align: center, $position: absolute);
         top: 20px;
         right: 20px;
-        
+        @include box-model ($background-color: $color-tertiary);
+        border-radius: 2px;
         p {
+            @include box-model ($padding: 5px 10px);
             color: #1b6150;
-            font-size: 14px;
-            font-weight: 700;
-            padding: 5px 10px;
-            margin: 0;
+            font-size: 0.9em;
+            font-weight: 700; 
           }
-
-
-
-
       }
-
-
-
-
-
-
-
 }
     
 .restaurant-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include flexbox($flex-direction: column,$flex-justify: space-around);
+    @include box-model($padding: 5px 0 20px 5px);
     &__title{
-        display: flex;
-        margin: 0;
+        @include flexbox;
+        @include box-model;
     }
     &__place{
-        display: flex;
-        margin: 0;
-        padding-top: 5px;
+        @include flexbox;
+        @include box-model($padding: 5px 0 10px 0);
     }    
 }
 
 .restaurant-like {
-    display: flex;
-    padding-right: 10px;
+    @include flexbox;
+    @include box-model($padding: 0 10px 25px 0);
     &__heart {
         &--full {
             fill: url(#gradient-vertical) ;
@@ -228,11 +205,7 @@
         --color-stop-1: #9356DC;
         --color-stop-2: #FF79DA  ;
       } 
-    .restaurant-like__heart--full:hover{
+    &__heart--full:hover{
         opacity: 1;
     }
-}
-
-#index-container{
-    animation: welcome 2.8s ease-in-out;
 }

@@ -1,10 +1,4 @@
 header{
-    @include display-row ;
-    justify-content: center;
-    height: 64px;
-    position: relative;
-   
-    h1{
-        font-family: $font-primary;
-    }
+    @include flexbox ($flex-justify: center, $flex-align : center,$position: relative);
+    @include box-model ($height: 64px);
 }
