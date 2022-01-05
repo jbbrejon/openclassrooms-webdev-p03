@@ -1,9 +1,5 @@
-header a{
-    font-size: 20px;
-    position: absolute;
-    left: 15px;
-}
-.restaurant-page__img {
+// Restaurant picture
+.restaurant-img {
     display: flex;
     height: 260px ;
     img{
@@ -11,187 +7,135 @@ header a{
         width: 100%;
     }
 }
+
+// Section - Menu
 .menu{
-    display: flex;
-    flex-direction: column;
-    margin-top: -35px;
-    padding: 10px 20px 0 20px;
-    background-color: #f6f6f6;
+    @include flexbox($flex-direction: column);
+    @include box-model($margin: -35px 0 0 0, $padding: 10px 20px 0 20px, $background-color: #f6f6f6);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    // Responsive - Desktop
     @include desktop-display{
         margin-bottom: 20px;
         border-radius: 40px;
-        padding-bottom: 20px;
-         
+        padding-bottom: 20px;  
     } 
 }
-.restaurant-page__info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+// Restaurant info
+.restaurant-info{
+    @include flexbox($flex-justify: space-between, $flex-align:center);
+    // Responsive - Dekstop
     @include desktop-display {
         width: 30%;
         margin: auto;
     }
-    &-name{
-        display: flex;
+
+    &__name{
+        @include flexbox;
         font-family: $font-primary;
     }
-    &-like{
-        display: flex;
-        margin-right: 20px;
-    
+
+    &__like{
+        @include flexbox;
+        @include box-model($margin: 0 20px 0 0);
     }
 }
+
+// Restaurant - All categories
 #restaurant-allcat{
-    display: flex;
-    flex-direction: column;
+    @include flexbox($flex-direction: column);
+    // Responsive - Desktop
     @include desktop-display{
         flex-direction: row;
         justify-content: space-between;
         height: 300px; 
     }
 }
+
+// Menu - Category
 .menu-cat{
-    display: flex;
-    flex-direction: column;
+    @include flexbox($flex-direction: column);
+    @include box-model($margin: 0 0 15px 0);
+    // Responsive - Desktop
     @include desktop-display{
         width: 32.9%; 
     }
 
     &__name{
+        @include box-model;
         text-transform: uppercase;
         font-weight: lighter;
         font-size: 16px;
-        margin-bottom: 0;
     }
 
     &__line{
-        display: flex;
-        margin-top: 5px;
-        height: 3px;
-        width: 40px;
-        background-color: $color-tertiary;
+        @include flexbox;
+        @include box-model($margin: 5px 0 0 0,$height: 3px,$width: 40px,$background-color: $color-tertiary);
     }
 }
-.menu-card{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    margin-top: 15px;
-    border-radius: 15px;
-    height: 69px;
-    &:hover .menu-item__check{
-        display: flex;
-        transform-origin: right;
-        animation: checkbox-slide 0.5s ease; 
-    }
-    &:hover .menu-item__check i{   
-        animation: checkbox-rotate 0.4s ease-in; 
-    }  
-}
-.menu-item1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    padding: 10px 0px 10px 20px;
-    box-shadow: 0px 5px 10px #f6f6f6;
-    &__title{
-        display: flex;
-        font-size: 16px;
-        font-weight: 500;    
-    }
-    &__info-desc{
-        display: inline-block;
-        font-size: 15px;
-        font-weight: lighter;    
-    }       
-}
+
+// Menu card
 .menu-card {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 15px;
+    @include flexbox($flex-justify: space-between);
+    @include box-model($margin: 15px 0 0 0,$width: 100%,$height: 69px,$background-color: white);
     border-radius: 15px;
-    height: 69px;
-    background-color: white;
     overflow: hidden;
     &:hover {
       cursor: pointer;
-      & .menu-checkbox {
-        animation: checkbox-slide 0.3s ease-out forwards;
+        & .menu-checkbox {
+            animation: checkbox-slide 0.3s ease-out forwards;
             i {
             animation: checkbox-rotate 0.2s ease-in 0.15s;
+            }
         }
-      }
     }
-  }
- .menu-card__col1 {
-    background-color: white;
-    display: flex;
-    padding: 12px 10px 12px 15px;
-    justify-content: space-between;
-    min-width: 0;
-  }
-  .menu-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    &__col1 {
+        @include flexbox($flex-justify: space-between);
+        @include box-model($padding: 12px 10px 12px 15px,$background-color: white);
+        min-width: 0;
+    }
+    &__col2 {
+        @include flexbox($flex-align:flex-end);
+    }
+}
+
+.menu-item {
+    @include flexbox($flex-direction: column,$flex-justify: space-around);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     &__title { 
-        font-size: 16px;
+        @include box-model;
+        font-size: 1em;
         font-weight: 500;
-        margin: 0;
         text-overflow: ellipsis;
         overflow: hidden;
     }
     &__desc {
-        font-size: 15px;
+        @include box-model;
+        font-size: 0.9em;
         font-weight: lighter;
-        margin: 0;
         text-overflow: ellipsis;
         overflow: hidden;
     }
   }
-  .menu-card__col2 {
-    display: flex;
-    align-items:flex-end;
-  }
-  .menu-price {
-    display: flex;
+
+.menu-price {
+    @include flexbox;
+    @include box-model($padding: 0 25px 13px 0);
     font-weight: bold;
-    padding: 0 25px 13px 0;
-  }
-  .menu-checkbox {
-    background-color: #99e2d0;
+}
+.menu-checkbox {
+    @include flexbox($flex-justify: center, $flex-align: center);
+    @include box-model($width: 70px, $height: 100%, $margin: 0 -70px 0 0, $background-color: $color-tertiary);
     color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     font-size: 1.5rem;
     transition: margin 0.3s ease-in-out;
-    width: 70px;
-    height: 100%;
-    margin-right: -70px;
     i {
         transition: transform 0.4s ease-in;
       } 
   }
-  .cta-order{
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
-    &_btn{
-        width: 185px;
-        height: 50px;
-        border-radius: 50px;
-        font-size: 16px;
-    } 
-}
 
 .card-1{
     animation: card-display 0.5s ease-in-out;
@@ -201,5 +145,16 @@ header a{
 }
 .card-3{
     animation: card-display 1.5s ease-in-out;
+}
+
+// CTA
+.cta-order{
+    @include flexbox($flex-justify: center);
+    @include box-model($margin: 50px 0);
+    &_btn{
+        @include box-model($width: 185px, $height: 50px);
+        border-radius: 50px;
+        font-size: 1em;
+    } 
 }
   

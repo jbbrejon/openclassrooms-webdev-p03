@@ -1,4 +1,9 @@
 header{
     @include flexbox ($flex-justify: center, $flex-align : center,$position: relative);
     @include box-model ($height: 64px);
+    a {
+        font-size: 1.3em;
+        position: absolute;
+        left: 15px;
+    }
 }
