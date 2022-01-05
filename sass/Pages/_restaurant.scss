@@ -4,7 +4,6 @@ header a{
     position: absolute;
     left: 15px;
 }
-
 .restaurant-page__img {
     display: flex;
     height: 260px ;
@@ -13,8 +12,6 @@ header a{
         width: 100%;
     }
 }
-
-
 .menu{
     display: flex;
     flex-direction: column;
@@ -26,11 +23,10 @@ header a{
     @include desktop-display{
         margin-bottom: 20px;
         border-radius: 40px;
+        padding-bottom: 20px;
          
     } 
 }
-
-
 .restaurant-page__info{
     display: flex;
     justify-content: space-between;
@@ -49,8 +45,6 @@ header a{
     
     }
 }
-
-
 #restaurant-allcat{
     display: flex;
     flex-direction: column;
@@ -60,7 +54,6 @@ header a{
         height: 300px; 
     }
 }
-
 .menu-cat{
     display: flex;
     flex-direction: column;
@@ -83,11 +76,6 @@ header a{
         background-color: $color-tertiary;
     }
 }
-
-
-
-
-
 .menu-card{
     display: flex;
     flex-direction: row;
@@ -95,22 +83,115 @@ header a{
     margin-top: 15px;
     border-radius: 15px;
     height: 69px;
-    
-    
-
     &:hover .menu-item__check{
         display: flex;
         transform-origin: right;
         animation: checkbox-slide 0.5s ease; 
     }
-
-    &:hover .menu-item__check i{
-        
+    &:hover .menu-item__check i{   
         animation: checkbox-rotate 0.4s ease-in; 
+    }  
+}
+.menu-item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px 10px 20px;
+    box-shadow: 0px 5px 10px #f6f6f6;
+    &__title{
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;    
     }
-    
-    
-   
+    &__info-desc{
+        display: inline-block;
+        font-size: 15px;
+        font-weight: lighter;    
+    }       
+}
+.menu-card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+    border-radius: 15px;
+    height: 69px;
+    background-color: white;
+    overflow: hidden;
+    &:hover {
+      cursor: pointer;
+      & .menu-checkbox {
+        animation: checkbox-slide 0.3s ease-out forwards;
+            i {
+            animation: checkbox-rotate 0.2s ease-in 0.15s;
+        }
+      }
+    }
+  }
+ .menu-card__col1 {
+    background-color: white;
+    display: flex;
+    padding: 12px 10px 12px 15px;
+    justify-content: space-between;
+    min-width: 0;
+  }
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &__title { 
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__desc {
+        font-size: 15px;
+        font-weight: lighter;
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+  }
+  .menu-card__col2 {
+    display: flex;
+    align-items:flex-end;
+  }
+  .menu-price {
+    display: flex;
+    font-weight: bold;
+    padding: 0 25px 13px 0;
+  }
+  .menu-checkbox {
+    background-color: #99e2d0;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    transition: margin 0.3s ease-in-out;
+    width: 70px;
+    height: 100%;
+    margin-right: -70px;
+    i {
+        transition: transform 0.4s ease-in;
+      } 
+  }
+  .cta-order{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    &_btn{
+        width: 185px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 16px;
+    } 
 }
 
 .card-1{
@@ -122,84 +203,4 @@ header a{
 .card-3{
     animation: card-display 1.5s ease-in-out;
 }
-
-
-.menu-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    padding: 10px 0px 10px 20px;
-    box-shadow: 0px 5px 10px #f6f6f6;
-
-
-    &__title{
-        display: flex;
-        font-size: 16px;
-        font-weight: 500;
-        
-    }
-
-    &__info{
-        display: flex;
-        justify-content: space-between;
-        padding-right: 10px;
-
-    }
-    &__info-desc{
-        display: inline-block;
-        font-size: 15px;
-        font-weight: lighter;
-
-
-         
-    }   
-
-    &__info-price{
-        display: flex;
-        align-items: flex-end;
-        margin-right: 15px;
-        font-weight: bold;
-    }
-
-    &__check{
-        display: none;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 25px;
-        background-color: $color-tertiary;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        width: 80px;
-        height: 100%;
-        transition: 1s;   
-    }
-       
-}
-
-
-
-.cta-order{
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
-    &_btn{
-        width: 185px;
-        height: 50px;
-        border-radius: 50px;
-        font-size: 16px;  
-} 
-}
-
-
-
-
-
-
-
-
-
-
-
-
+  
