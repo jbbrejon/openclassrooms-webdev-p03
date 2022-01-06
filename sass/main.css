@@ -716,11 +716,6 @@ header a {
   transition: 0.5s;
 }
 
-.restaurant-like #gradient-vertical {
-  --color-stop-1: #9356DC;
-  --color-stop-2: #FF79DA  ;
-}
-
 .restaurant-like__heart--full:hover {
   opacity: 1;
 }
