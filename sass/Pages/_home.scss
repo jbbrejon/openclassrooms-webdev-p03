@@ -88,11 +88,21 @@
         @include box-model($margin: 0 20px 20px 20px,$background-color: #f6f6f6, $height: 73px);  
         @include box-shadow;
         border-radius: 25px;
-        font-size: 16px;
+        font-size: 1em;
+        font-weight: 500;
         // Responsive - Desktop
         @include desktop-display{
             padding-right: 20px;
-        }    
+        }
+
+        &:hover {
+            background: lighten($color-secondary, 23%);
+        } 
+       
+        &:hover i {
+           color:$color-primary;
+       }  
+         
     }
     
     &__list-number{

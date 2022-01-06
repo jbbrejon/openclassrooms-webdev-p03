@@ -394,13 +394,22 @@ header a {
   -webkit-box-shadow: 0px 5px 10px #e3e3e3;
           box-shadow: 0px 5px 10px #e3e3e3;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 992px) {
   .operation__list-li {
     padding-right: 20px;
   }
+}
+
+.operation__list-li:hover {
+  background: #ffeefa;
+}
+
+.operation__list-li:hover i {
+  color: #9356DC;
 }
 
 .operation__list-number {
