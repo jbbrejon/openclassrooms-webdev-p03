@@ -77,6 +77,39 @@
   opacity: 1;
 }
 
+.heart-empty {
+  font-size: 1.5em;
+  -webkit-transition: 0.3s 0.3s;
+  transition: 0.3s 0.3s;
+}
+
+.heart-full {
+  font-size: 0.1em;
+  opacity: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurant-info__like:hover .heart-full {
+  -webkit-animation: heart 0.5s ease-in-out forwards;
+          animation: heart 0.5s ease-in-out forwards;
+}
+
+.restaurant-info__like:hover .heart-empty {
+  opacity: 0;
+}
+
+.restaurant-like:hover .heart-full {
+  -webkit-animation: heart 0.5s ease-in-out forwards;
+          animation: heart 0.5s ease-in-out forwards;
+}
+
+.restaurant-like:hover .heart-empty {
+  opacity: 0;
+}
+
 #index-container {
   -webkit-animation: welcome 2.8s ease-in-out;
           animation: welcome 2.8s ease-in-out;
@@ -1418,6 +1451,42 @@ main {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes heart {
+  0% {
+    font-size: 0.1em;
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.2;
+    font-size: 1.6em;
+  }
+  100% {
+    opacity: 1.5;
+    font-size: 1.5em;
+  }
+}
+
+@keyframes heart {
+  0% {
+    font-size: 0.1em;
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.2;
+    font-size: 1.6em;
+  }
+  100% {
+    opacity: 1.5;
+    font-size: 1.5em;
   }
 }
 

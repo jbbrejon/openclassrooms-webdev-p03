@@ -40,14 +40,10 @@
 }
 
 
-
-
 // Restaurant Page - Menu item 
 @keyframes card-display {
   0% {
     opacity: 0;
-    
-  
   }
   50% {
     opacity: 0;
@@ -86,3 +82,23 @@
   }
 }
 
+
+
+
+@keyframes heart {
+  0% {
+    font-size: 0.1em;
+    opacity: 0
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.2;
+    font-size: 1.6em;
+  }
+  100% {
+    opacity: 1.5;
+    font-size: 1.5em;
+  }
+}
