@@ -1,36 +1,18 @@
-@keyframes checkbox-slide {
-  0% {
-    margin-right: -70px;
-  }
-  100% {
-    margin-right: 0;
-  }
-}
-
-
-
-@keyframes checkbox-rotate {
-  0% {
-      transform: rotate(0);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
-}
-
-@keyframes card-display {
+// Index - Load page content
+@keyframes welcome {
   0% {
     opacity: 0;
-    margin-top: 25px;
-  
+  }
+  80%{
+    opacity :0
   }
   100% {
-    opacity: 1;
-    margin-top: 15px;
-
+    opacity: 1
   }
 }
 
+
+// Index - Spinloader - Rotation
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -44,12 +26,12 @@
     opacity: 0.2;
   }
 }
-
+// Index - Spinloader - Splash text
 @keyframes splash {
   0% {
     opacity: 0.1;
   }
-  0% {
+  50% {
     opacity: 1;
   }
   100% {
@@ -58,14 +40,49 @@
 }
 
 
-@keyframes welcome {
+
+
+// Restaurant Page - Menu item 
+@keyframes card-display {
   0% {
     opacity: 0;
+    
+  
   }
-  80%{
-    opacity :0
+  50% {
+    opacity: 0;
+    margin-top: 25px;
+
+  }
+  75% {
+    opacity: 0.8;
+
+
   }
   100% {
-    opacity: 1
+    opacity: 1;
+    margin-top: 15px;
+
   }
 }
+
+// Restaurant Page - Menu item - Checkbox - Slide left
+@keyframes checkbox-slide {
+  0% {
+    margin-right: -70px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+
+// Restaurant Page - Menu item - Checkbox - Rotate icon
+@keyframes checkbox-rotate {
+  0% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+

@@ -49,7 +49,7 @@
     @include desktop-display{
         flex-direction: row;
         justify-content: space-between;
-        height: 300px; 
+        height: 320px; 
     }
 }
 
@@ -73,12 +73,18 @@
         @include flexbox;
         @include box-model($margin: 5px 0 0 0,$height: 3px,$width: 40px,$background-color: $color-tertiary);
     }
+
+    &__cards{
+        @include flexbox($flex-direction: column);
+        @include box-model($height: 270px );
+    }
 }
 
 // Menu card
 .menu-card {
     @include flexbox($flex-justify: space-between);
     @include box-model($margin: 15px 0 0 0,$width: 100%,$height: 69px,$background-color: white);
+    @include box-shadow;
     border-radius: 15px;
     overflow: hidden;
     &:hover {
@@ -138,14 +144,15 @@
   }
 
 .card-1{
-    animation: card-display 0.5s ease-in-out;
+    animation: card-display 0.8s ease-in-out;
 }
 .card-2{
     animation: card-display 1s ease-in-out;
 }
 .card-3{
-    animation: card-display 1.5s ease-in-out;
+    animation: card-display 1.3s ease-in-out;
 }
+
 
 // CTA
 .cta-order{
