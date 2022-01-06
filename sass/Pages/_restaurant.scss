@@ -18,7 +18,7 @@
     @include desktop-display{
         margin-bottom: 20px;
         border-radius: 40px;
-        padding-bottom: 20px;  
+        padding-bottom: 20px; 
     } 
 }
 
@@ -51,6 +51,17 @@
         justify-content: space-between;
         height: 320px; 
     }
+   
+}
+
+#restaurant-allcat--alt {
+    @include flexbox($flex-direction: column);
+    // Responsive - Desktop
+    @include desktop-display{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 400px; 
+    }
 }
 
 // Menu - Category
@@ -77,6 +88,10 @@
     &__cards{
         @include flexbox($flex-direction: column);
         @include box-model($height: 270px );
+        &--alt{
+            @include flexbox($flex-direction: column);
+            @include box-model($height: 350px );
+        }
     }
 }
 
@@ -152,6 +167,10 @@
 .card-3{
     animation: card-display 1.3s ease-in-out;
 }
+.card-4{
+    animation: card-display 1.5s ease-in-out;
+}
+
 
 
 // CTA

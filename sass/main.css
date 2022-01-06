@@ -957,6 +957,36 @@ footer {
   }
 }
 
+#restaurant-allcat--alt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  position: static;
+}
+
+@media only screen and (min-width: 992px) {
+  #restaurant-allcat--alt {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 400px;
+  }
+}
+
 .menu-cat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1037,6 +1067,28 @@ footer {
   padding: 0;
   width: auto;
   height: 270px;
+  background-color: transparent;
+}
+
+.menu-cat__cards--alt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  position: static;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 350px;
   background-color: transparent;
 }
 
@@ -1232,6 +1284,11 @@ footer {
 .card-3 {
   -webkit-animation: card-display 1.3s ease-in-out;
           animation: card-display 1.3s ease-in-out;
+}
+
+.card-4 {
+  -webkit-animation: card-display 1.5s ease-in-out;
+          animation: card-display 1.5s ease-in-out;
 }
 
 .cta-order {
