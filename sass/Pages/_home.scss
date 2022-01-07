@@ -59,15 +59,15 @@
     @include desktop-display{
         height: 150px;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     } 
 
     &__title{
         @include flexbox;
-        @include box-model ($margin : 50px 0 10px 0);
+        @include box-model ($margin : 50px 0 25px 0);
         //Responsive - Desktop
         @include desktop-display{
-            margin : 15px 40px 0 0
+            margin-top : 25px
         }    
     }
 
