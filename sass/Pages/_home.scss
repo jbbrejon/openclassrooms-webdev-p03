@@ -205,7 +205,6 @@
     @include box-model($padding: 0 10px 25px 0);
     &__heart {
         &--full {
-            fill: url(#gradient-vertical) ;
             position: absolute;
             opacity: 0;
             transition: 0.5s;

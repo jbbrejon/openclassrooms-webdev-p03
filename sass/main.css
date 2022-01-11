@@ -734,7 +734,6 @@ header a {
 }
 
 .restaurant-like__heart--full {
-  fill: url(#gradient-vertical);
   position: absolute;
   opacity: 0;
   -webkit-transition: 0.5s;
