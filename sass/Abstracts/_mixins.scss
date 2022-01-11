@@ -1,13 +1,3 @@
-@mixin display-row {
-    display: flex;
-    align-items: center;
-}
-
-@mixin display-column {
-    display: flex;
-    flex-direction: column; 
-}
-
 @mixin tablet-display {
     @media only screen and (min-width: 768px) {
     @content;
